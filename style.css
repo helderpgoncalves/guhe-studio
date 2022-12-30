@@ -1,0 +1,173 @@
+/* import font */
+@font-face {
+  font-family: "Orange Kid";
+  src: url("fonts/orange\ kid.ttf");
+}
+
+* {
+  font-family: "Orange Kid";
+  color: #fff;
+}
+
+body {
+  background: #0a2424;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-size: cover;
+  background-image: url("svg/blur.png");
+  background-repeat: no-repeat;
+  background-position: center;
+    background-attachment: fixed;
+}
+
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: transparent;
+  padding: 32px 32px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-color: transparent;
+  padding: 32px 32px 32px 32px;
+  width: 100%;
+}
+
+.footer a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.footer a.logo {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+/* Change the background color on mouse-over */
+.footer a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.footer a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.footer-right {
+  float: right;
+}
+
+#row-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#image {
+  margin-top: 10%;
+  width: 50%;
+  height: 60%;
+  rotate: 45deg;
+}
+
+#image-text {
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  left: -10%;
+  top: 20%;
+  font-size: 300px;
+  line-height: 100%;
+}
+
+#image-text2 {
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  left: 60%;
+  top: 20%;
+  font-size: 300px;
+  line-height: 100%;
+}
+
+#author-container-row {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+#author-name {
+  font-family: "Orange Kid";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  /* identical to box height, or 20px */
+
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+}
+
+#author-description {
+  font-family: "Orange Kid";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: justify;
+  text-transform: uppercase;
+  color: #ffffff;
+}
